@@ -240,4 +240,142 @@ Vertical video format (9:16): Quick tutorial showing one simple eco-craft techni
 
 ---
 
-*Estos prompts están listos para usar en Midjourney, DALL·E, Stable Diffusion, o como briefing para fotógrafos y diseñadores humanos.*
+## 🎯 NUEVOS PROMPTS PARA ESTRUCTURA MEJORADA
+
+### 31. TESTIMONIOS CON FOTO - Imagen 1 (María González)
+**Prompt:**
+```
+Environmental portrait of middle-aged Chilean woman in her 40s standing proudly in her home workshop, holding handmade eco-products created from recycled materials. Natural window light illuminating her genuine warm smile, surrounded by finished sustainable products on shelves. Authentic cultural details, traditional Chilean textile patterns visible. Documentary photography style, soft natural lighting, warm color grading. San Fabián rural home setting with wooden textures. Photojournalistic approach, real emotion, empowering mood. 8K resolution, photorealistic.
+```
+
+### 32. TESTIMONIOS CON FOTO - Imagen 2 (Carlos Sepúlveda)
+**Prompt:**
+```
+Portrait of young Chilean man in his 30s working in sustainable workshop, hands actively crafting product from recycled plastic. Natural confident expression, focused on his craft. Workshop background with organized tools and materials. Golden hour natural lighting through large windows. Documentary style, authentic moment of concentration. Forest green and orange accents in environment. Professional craftsmanship showcase. Warm earth tones, shallow depth of field. High resolution, realistic photography.
+```
+
+### 33. TESTIMONIOS CON FOTO - Imagen 3 (Rosa Muñoz)
+**Prompt:**
+```
+Candid portrait of elderly Chilean woman (60s-70s) smiling warmly while displaying her handmade eco-products at small home business table. Natural wrinkles showing life experience, authentic joy in expression. Background shows organized display of sustainable products. Soft natural lighting, warm afternoon glow. Cultural details: traditional Chilean home décor elements visible. Documentary photography, genuine emotion, inspirational mood. Warm color palette, soft focus background. Photorealistic, high detail.
+```
+
+### 34. PROYECTOS DESTACADOS 1 - Red Salud (Imagen)
+**Prompt:**
+```
+Professional photo of hospital waste management collaboration: PRIMA team members and healthcare workers standing together next to organized recycling bins and transformed medical waste into useful products. Modern Chilean hospital setting, clean and professional. Natural corporate lighting. Teamwork and partnership visible. Before/after display showing waste transformation. Corporate documentary style. Clean whites, medical greens, professional atmosphere. Success story visual. High resolution.
+```
+
+### 35. PROYECTOS DESTACADOS 2 - Talleres Comunitarios (Imagen)
+**Prompt:**
+```
+Wide shot of community workshop in progress: 15-20 diverse Chilean people of different ages participating in hands-on recycling craft training. Instructor demonstrating technique at central table, participants engaged and learning. Community center setting with natural light. Workshop tables covered with sorted materials and tools. Authentic community interaction, collaborative atmosphere. Documentary photography, warm welcoming mood. Earth tones, educational environment. Group activity energy captured. 8K resolution.
+```
+
+### 36. PROYECTOS DESTACADOS 3 - Productos Innovadores (Imagen)
+**Prompt:**
+```
+Product showcase photography: collection of 22 different handmade eco-products beautifully arranged and lit. Items include bags, containers, accessories, home goods - all visibly created from recycled materials. Clean white studio background or natural outdoor Chilean landscape setting. Professional product photography lighting, crisp details. Organized display showing variety and quality. E-commerce style photography meets artisan craft aesthetic. Vibrant greens, clean composition, aspirational presentation. High resolution, catalog-quality.
+```
+
+### 37. ALIADOS Y LOGOS - Empresas Colaboradoras (Diseño)
+**Prompt:**
+```
+Clean logo grid design showing partner organizations and sponsors: CORFO, Gobierno de Chile, UDD Ventures, and placeholder spaces for additional partners. Modern corporate layout, professional presentation. Logos properly sized and aligned. White or light beige background. Subtle connecting lines or subtle eco-themed decorative elements (leaves, circular economy arrows). Corporate professionalism meets sustainability aesthetic. Vector-ready design, high resolution PNG and SVG versions.
+```
+
+### 38. EQUIPO PRIMA - Foto Grupal del Equipo
+**Prompt:**
+```
+Professional team photo of PRIMA core team (5-8 members) standing together outdoors in natural Chilean Ñuble landscape. Green hills and native plants in background. Team wearing casual-professional attire with PRIMA branded elements. Genuine smiles, relaxed professional posture. Golden hour natural lighting. Documentary corporate photography style. Diverse team showing collaboration and unity. Warm color grading, soft natural shadows. Authentic team spirit visible. High resolution, professional headshot quality.
+```
+
+### 39. EQUIPO PRIMA - Retratos Individuales (Múltiples imágenes)
+**Prompt base para cada miembro:**
+```
+Professional environmental portrait of PRIMA team member [NAME/ROLE] in their natural work environment. Half-body shot showing personality and professionalism. Natural window light, soft shadows. Background shows relevant workspace (workshop/office/community setting) slightly blurred. Genuine expression, approachable demeanor. Documentary style headshot. Consistent lighting and style across all team portraits. Warm color palette, professional yet friendly. 8K resolution, LinkedIn/About page quality.
+```
+
+### 40. CONTACTO - Mapa Interactivo Background
+**Prompt:**
+```
+Illustrated map design of San Fabián, Ñuble region, Chile, showing PRIMA location pin and surrounding area. Modern flat design style with topographic elements. Forest green and soft earth tones matching PRIMA palette. Clear location marker, street names visible. Minimalist cartographic aesthetic. Vector-style illustration, clean and professional. Suitable as interactive map background. High resolution, web-optimized. Geographic accuracy with artistic treatment.
+```
+
+### 41. INFOGRAFÍA MÉTODO PRIMA - Diagrama Completo
+**Prompt:**
+```
+Comprehensive infographic design showing PRIMA methodology in 5 circular steps connected with arrows forming continuous cycle. Each step has icon, title, and brief description. Circular economy visual metaphor. Clean modern design, professional layout. PRIMA color palette: greens #2E7D32, #A5D6A7, orange #FFA726, beige #F2EDE4. Vector illustration style, educational clarity. Horizontal or vertical layout options. Suitable for presentation and website. High resolution, print and web ready.
+```
+
+### 42. VIDEOS - Equipo en Acción (Video filming guide)
+**Prompt/Storyboard:**
+```
+2-3 minute documentary video: PRIMA team conducting workshop with community members. Scenes include: 1) Team arriving and setting up materials, 2) Welcoming participants, 3) Hands-on demonstration of recycling techniques, 4) Participants creating their own products, 5) Final group celebration with finished items. Natural lighting throughout. Documentary filmmaking style, authentic moments. Warm color grading. Include close-ups of hands working, wide shots of group interaction, individual testimonial clips. Subtitled for accessibility. Inspirational music track. 1080p minimum, 4K preferred.
+```
+
+### 43. VIDEOS - Casos de Éxito Cortos (Múltiples videos 30-60 seg)
+**Prompt:**
+```
+Short-form vertical video (9:16 for Instagram/TikTok): Quick before-and-after transformation story. Opening: person/family introducing themselves and their challenge. Middle: time-lapse or B-roll showing their work creating products. Ending: proud display of finished products and brief impact statement. On-screen text highlights key metrics (income increase, products created, etc.). Uplifting music. Natural authentic footage. Engaging first 3 seconds. 30-60 seconds total. Subtitle-friendly framing.
+```
+
+### 44. CULTURA AMBIENTAL - Blog Tips Visuales (Series de imágenes)
+**Prompt base:**
+```
+Educational tip card design for social media and blog: Single environmental tip presented visually. Clean graphic design with illustration or photo. Title, main tip text, and call-to-action visible. PRIMA branding subtle. Instagram square format (1080x1080px). Scrollable carousel-friendly series. Consistent template across all tips. Color palette: PRIMA greens, beiges, orange accents. Modern, shareable, educational aesthetic. Infographic meets social media style. Vector and raster versions.
+```
+
+### 45. BANNERS EDUCATIVOS - Serie de Gráficas
+**Prompt:**
+```
+Set of horizontal web banners (1920x600px) for different educational topics: recycling basics, circular economy, waste separation, environmental impact. Each banner: compelling hero image (photograph or illustration), bold headline text, brief description, clear CTA button. Cohesive design system across all banners. PRIMA color palette maintained. Professional educational marketing aesthetic. Text-overlay friendly photography or clean vector illustrations. Web-optimized, fast-loading. Modern responsive design.
+```
+
+### 46. ÍCONOS REDES SOCIALES ACTIVOS
+**Prompt:**
+```
+Custom icon set for PRIMA's active social media channels: Instagram, Facebook, LinkedIn, TikTok, WhatsApp. Eco-styled versions maintaining platform recognition but with PRIMA branding elements (subtle leaf, circular economy integration). Consistent style across all icons. Two versions: color and monochrome. Vector SVG format, web-ready PNG. Multiple sizes (16px to 256px). Professional icon design, modern and clean. Recognizable at small sizes.
+```
+
+---
+
+## 📊 RESUMEN DE IMÁGENES NECESARIAS POR CARPETA
+
+### /images/testimonios/
+- testimonios-1.png (María González)
+- testimonios-2.png (Carlos Sepúlveda)
+- testimonios-3.png (Rosa Muñoz)
+
+### /images/proyectos/
+- proyectos-destacados-1.png (Red Salud)
+- proyectos-destacados-2.png (Talleres Comunitarios)
+- proyectos-destacados-3.png (Productos Innovadores)
+
+### /images/equipo/
+- equipo-grupal.png (Foto del equipo completo)
+- miembro-1.png hasta miembro-N.png (Retratos individuales)
+
+### /images/aliados/
+- aliados-logos.png (Grid de logos de partners)
+
+### /images/infografias/
+- metodo-prima-infografia.png (Diagrama completo del método)
+- tips-ambientales-X.png (Serie de cards educativos)
+
+### /images/banners/
+- banner-reciclaje.png
+- banner-economia-circular.png
+- banner-separacion.png
+- banner-impacto.png
+
+### /videos/
+- equipo-en-accion.mp4
+- caso-redsalud.mp4
+- usuarios-testimonios-1.mp4
+- usuarios-testimonios-2.mp4
+- usuarios-testimonios-3.mp4
+
+---
+
+*Estos prompts están listos para usar en Midjourney, DALL·E, Stable Diffusion, Leonardo.AI, o como briefing para fotógrafos y diseñadores humanos.*

@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Read(//h/DESCARGAS/**)",
+      "WebFetch(domain:proyectoprima.com)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nSitio web completo de Proyecto PRIMA con diseño profesional\n\n- Implementación de diseño profesional con tipografía Inter y Outfit\n- 5 páginas completas: Home, Método PRIMA, Cultura Ambiental, Equipo, Contacto\n- Formulario de contacto mejorado y optimizado\n- Placeholders profesionales para imágenes\n- Responsive design para todos los dispositivos\n- Paleta de colores PRIMA: Verde bosque, Verde suave, Arena clara\n- Mejoras de legibilidad y contraste en todas las secciones\n- Sistema de navegación completo entre páginas\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config:*)",
+      "Bash(git push:*)",
+      "Bash(copy styles.css styles.backup.css)",
+      "Bash(dir:*)",
+      "Bash(git commit:*)",
+      "Bash(mkdir:*)",
+      "Bash(start index.html)",
+      "Bash(start:*)",
+      "Bash(del \"C:\\Users\\gonza\\Desktop\\PROYECTO PRIMA\\update_footer.py\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
