@@ -16,7 +16,8 @@
       "Bash(mkdir:*)",
       "Bash(start index.html)",
       "Bash(start:*)",
-      "Bash(del \"C:\\Users\\gonza\\Desktop\\PROYECTO PRIMA\\update_footer.py\")"
+      "Bash(del \"C:\\Users\\gonza\\Desktop\\PROYECTO PRIMA\\update_footer.py\")",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []
