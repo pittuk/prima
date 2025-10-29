@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Método PRIMA - Emprende con residuos</title>
+    <link rel="icon" type="image/png" href="images/Proyecto-prima-favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -30,147 +31,319 @@
         </div>
     </header>
 
-    <!-- Hero Método PRIMA -->
-    <section class="hero-metodo">
-        <div class="container">
-            <div class="hero-metodo-content">
-                <span class="hero-welcome">Método PRIMA</span>
-                <h1 class="hero-title-new">Emprende con residuos.</h1>
-                <p class="hero-description">
-                    Transforma desechos en oportunidades sostenibles para tu comunidad.
-                    Aprende técnicas innovadoras y crea tu propio negocio con impacto ambiental positivo.
+    <!-- Hero Método PRIMA - Estilo Home -->
+    <section class="hero-clean" id="inicio">
+        <div class="hero-clean-container">
+            <div class="hero-clean-content">
+                <span class="hero-label">Método PRIMA</span>
+                <h1 class="hero-clean-title">Te enseñamos a emprender con residuos, convirtiéndolos en oportunidades económicas y ambientales</h1>
+                <p class="hero-clean-text">
+                    Transforma desechos en posibilidades: aprende a crear negocios sostenibles que cuidan el planeta y tu futuro económico.
                 </p>
+
+                <div class="hero-clean-buttons">
+                    <a href="#lleva-prima" class="btn-primary-clean">Comienza ahora</a>
+                </div>
+            </div>
+
+            <div class="hero-clean-image">
+                <img src="images/equipo-prima.webp" alt="Método PRIMA - Emprendimiento con residuos" class="hero-img-clean">
             </div>
         </div>
     </section>
 
-    <!-- Descripción -->
-    <section class="metodo-description-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag centered">Innovación Sostenible</span>
-                <h2 class="section-heading centered">¿Qué es el Método PRIMA?</h2>
+    <!-- Descripción - Nuevo diseño -->
+    <section class="metodo-about-section">
+        <div class="metodo-about-container">
+            <div class="metodo-about-image">
+                <video class="metodo-video" controls autoplay muted loop>
+                    <source src="videos/67a53af43553cdcdb0a76634.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
             </div>
-            <div class="metodo-intro">
-                <p class="metodo-intro-text">
-                    El Método PRIMA te enseña a emprender con residuos, transformándolos en oportunidades
-                    económicas y ambientales. Propone crear negocios sostenibles que cuidan el planeta
-                    y generan ingresos locales mediante técnicas de innovación en gestión de residuos.
-                </p>
+            <div class="metodo-about-content">
+                <span class="metodo-about-label">MÉTODO PRIMA</span>
+                <h2 class="metodo-about-title">¿Qué es el Método PRIMA?</h2>
+
+                <div class="metodo-features-list">
+                    <div class="metodo-feature-item">
+                        <div class="metodo-feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <div class="metodo-feature-text">
+                            <h3 class="metodo-feature-title">Emprendimiento Sostenible</h3>
+                            <p class="metodo-feature-description">Transforma residuos en productos comerciales, generando ingresos para tu comunidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="metodo-feature-item">
+                        <div class="metodo-feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="metodo-feature-text">
+                            <h3 class="metodo-feature-title">Impacto Comunitario</h3>
+                            <p class="metodo-feature-description">Capacitación y acompañamiento integral para familias y emprendedores locales.</p>
+                        </div>
+                    </div>
+
+                    <div class="metodo-feature-item">
+                        <div class="metodo-feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <div class="metodo-feature-text">
+                            <h3 class="metodo-feature-title">Economía Circular</h3>
+                            <p class="metodo-feature-description">Reduce, reutiliza y valoriza residuos mediante técnicas innovadoras de gestión.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contacto" class="btn-metodo-about">
+                    <span>Quiero aprender más</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
             </div>
+
+            
         </div>
     </section>
 
-    <!-- Etapas del Método -->
-    <section class="etapas-section">
+    <!-- Etapas del Método - Nuevo diseño con imágenes -->
+    <section class="etapas-section-new">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag centered">Proceso de Transformación</span>
                 <h2 class="section-heading centered">Las 5 Etapas del Método PRIMA</h2>
             </div>
 
-            <div class="etapas-grid">
-                <div class="etapa-card">
-                    <div class="etapa-number">1</div>
-                    <h3 class="etapa-title">Prototipado</h3>
-                    <p class="etapa-description">
-                        Diseña y crea productos a partir de residuos con técnicas innovadoras.
-                        Experimenta con materiales y desarrolla prototipos funcionales.
-                    </p>
+            <div class="etapas-grid-new">
+                <div class="etapa-card-new">
+                    <div class="etapa-image-wrapper">
+                        <img src="images/disposicion-de-utensilios-ecologicos.webp" alt="Prototipado" loading="lazy">
+                        <div class="etapa-number-badge">1</div>
+                    </div>
+                    <div class="etapa-content">
+                        <span class="etapa-category">ETAPA 1</span>
+                        <h3 class="etapa-title-new">Prototipado</h3>
+                        <p class="etapa-description-new">
+                            Diseña y crea productos a partir de residuos con técnicas innovadoras.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="etapa-card">
-                    <div class="etapa-number">2</div>
-                    <h3 class="etapa-title">Gestión de residuos</h3>
-                    <p class="etapa-description">
-                        Implementa manejo eficiente y sostenible para reutilizar materiales.
-                        Aprende a separar, clasificar y procesar residuos correctamente.
-                    </p>
+                <div class="etapa-card-new">
+                    <div class="etapa-image-wrapper">
+                        <img src="images/persona-haciendo-reciclaje-selectivo-de-basura1.webp" alt="Gestión de residuos" loading="lazy">
+                        <div class="etapa-number-badge">2</div>
+                    </div>
+                    <div class="etapa-content">
+                        <span class="etapa-category">ETAPA 2</span>
+                        <h3 class="etapa-title-new">Gestión de residuos</h3>
+                        <p class="etapa-description-new">
+                            Implementa manejo eficiente y sostenible para reutilizar materiales.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="etapa-card">
-                    <div class="etapa-number">3</div>
-                    <h3 class="etapa-title">Educación ambiental</h3>
-                    <p class="etapa-description">
-                        Motiva la entrega de residuos limpios y secos en tu comunidad.
-                        Capacita y sensibiliza sobre la importancia del reciclaje responsable.
-                    </p>
+                <div class="etapa-card-new">
+                    <div class="etapa-image-wrapper">
+                        <img src="images/Sensibilización y educación.webp" alt="Educación ambiental" loading="lazy">
+                        <div class="etapa-number-badge">3</div>
+                    </div>
+                    <div class="etapa-content">
+                        <span class="etapa-category">ETAPA 3</span>
+                        <h3 class="etapa-title-new">Educación ambiental</h3>
+                        <p class="etapa-description-new">
+                            Motiva la entrega de residuos limpios y secos en tu comunidad.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="etapa-card">
-                    <div class="etapa-number">4</div>
-                    <h3 class="etapa-title">Sistematización de producción</h3>
-                    <p class="etapa-description">
-                        Organiza el trabajo en serie para optimizar recursos y tiempos.
-                        Crea procesos eficientes y escalables para tu emprendimiento.
-                    </p>
+                <div class="etapa-card-new">
+                    <div class="etapa-image-wrapper">
+                        <img src="images/Recolección y clasificación colaborativa.webp" alt="Sistematización de producción" loading="lazy">
+                        <div class="etapa-number-badge">4</div>
+                    </div>
+                    <div class="etapa-content">
+                        <span class="etapa-category">ETAPA 4</span>
+                        <h3 class="etapa-title-new">Sistematización de producción</h3>
+                        <p class="etapa-description-new">
+                            Organiza el trabajo en serie para optimizar recursos y tiempos.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="etapa-card">
-                    <div class="etapa-number">5</div>
-                    <h3 class="etapa-title">Venta y modelo de negocio</h3>
-                    <p class="etapa-description">
-                        Define modelo de negocio, identifica clientes y exhibe productos.
-                        Desarrolla estrategias de comercialización y canales de venta efectivos.
-                    </p>
+                <div class="etapa-card-new">
+                    <div class="etapa-image-wrapper">
+                        <img src="images/quienes-somos.jpg" alt="Venta y modelo de negocio" loading="lazy">
+                        <div class="etapa-number-badge">5</div>
+                    </div>
+                    <div class="etapa-content">
+                        <span class="etapa-category">ETAPA 5</span>
+                        <h3 class="etapa-title-new">Venta y modelo de negocio</h3>
+                        <p class="etapa-description-new">
+                            Define modelo de negocio, identifica clientes y exhibe productos.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Cómo Participar -->
-    <section class="participa-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag centered">Únete al Cambio</span>
-                <h2 class="section-heading centered">Participa o Implementa PRIMA</h2>
-            </div>
-
-            <div class="participa-content">
-                <p class="participa-intro">
-                    Presenta la iniciativa en tu comuna o institución siguiendo estos pasos:
-                </p>
-
-                <div class="pasos-grid">
-                    <div class="paso-item">
-                        <div class="paso-icon">1</div>
-                        <h4 class="paso-title">Completa el formulario</h4>
-                        <p class="paso-text">Llena el formulario de contacto con tus datos y motivación</p>
+    <!-- Lleva PRIMA a tu Comuna -->
+    <section class="lleva-prima-section" id="lleva-prima">
+        <!-- Hero con imagen de fondo -->
+        <div class="lleva-prima-hero-visual">
+            <div class="lleva-prima-hero-overlay"></div>
+            <div class="container">
+                <div class="lleva-prima-hero-grid">
+                    <div class="lleva-prima-hero-content">
+                        <h2 class="lleva-prima-hero-title">Así puedes llevar el proyecto Prima a tu Comuna</h2>
                     </div>
-                    <div class="paso-item">
-                        <div class="paso-icon">2</div>
-                        <h4 class="paso-title">Recibe instrucciones</h4>
-                        <p class="paso-text">Te enviaremos un correo con toda la información necesaria</p>
-                    </div>
-                    <div class="paso-item">
-                        <div class="paso-icon">3</div>
-                        <h4 class="paso-title">Comparte la iniciativa</h4>
-                        <p class="paso-text">Invita a otros emprendedores locales a ser parte del cambio</p>
+                    <div class="lleva-prima-hero-cta">
+                        <p class="lleva-prima-hero-description">
+                            Queremos que más emprendedores puedan transformar residuos en oportunidades y generar ingresos sostenibles. Para lograrlo, necesitamos tu ayuda para presentar el Método PRIMA en tu comuna o institución. ¡Es un proceso simple y aquí te explicamos cómo hacerlo!
+                        </p>
+                        <a href="#proceso" class="btn-lleva-prima-hero">
+                            <span>Ver Proceso</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 16 16 12 12 8"></polyline>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </a>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="acompanamiento-box">
-                    <h3 class="acompanamiento-title">Acompañamiento Integral</h3>
-                    <p class="acompanamiento-text">
-                        PRIMA te guía paso a paso para implementar el modelo en tu territorio, con educación,
-                        gestión y acompañamiento técnico. Nuestro equipo te apoya desde el inicio hasta
-                        consolidar tu emprendimiento sostenible.
-                    </p>
+        <!-- Sección verde con cards -->
+        <div class="lleva-prima-green-section" id="proceso">
+            <div class="container">
+                <div class="lleva-prima-cards-grid">
+                    <!-- Card 1: Cómo funciona -->
+                    <div class="lleva-prima-card profile-style">
+                        <div class="card-image-top">
+                            <img src="images/personas-que-realizan-acciones-comunitarias.webp" alt="Transformación creativa">
+                        </div>
+                        <div class="card-profile-content">
+                            <h3 class="card-profile-title">
+                                ¿Cómo presentar la iniciativa?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#1B5E20" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </h3>
+                            <p class="card-profile-description">
+                                Da el paso hacia el cambio: te orientamos a presentar esta iniciativa en tu territorio y convertir tu idea en un emprendimiento que transforme vidas y el entorno.
+                            </p>
+                            <p class="card-profile-highlight">¡Es un proceso simple y aquí te explicamos cómo hacerlo!</p>
+                            <div class="card-profile-checklist">
+                                <div class="check-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Completa el formulario que encontrarás a continuación.</span>
+                                </div>
+                                <div class="check-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Recibirás un correo con un instructivo de diversas formas para ingresar una solicitud.</span>
+                                </div>
+                                <div class="check-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Comparte esta iniciativa con otros emprendedores de tu comuna para aumentar las posibilidades de implementar PRIMA en tu territorio.</span>
+                                </div>
+                            </div>
+                            <a href="#contacto" class="card-profile-button">
+                                Comenzar
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5v14M5 12h14"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Llamado a la acción -->
+                    <div class="lleva-prima-card profile-style">
+                        <div class="card-image-top">
+                            <img src="images/voluntarios-sonrientes-preparando-comida-para-donacion.webp" alt="Impacto social">
+                        </div>
+                        <div class="card-profile-content">
+                            <h3 class="card-profile-title">
+                                ¡No estás solo en este proceso!
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#1B5E20" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </h3>
+                            <p class="card-profile-description">
+                                Nos contactaremos contigo y te guiaremos en cada paso para que tu comuna tenga acceso al Método PRIMA.
+
+
+                            </p>
+                            <p class="card-profile-description">
+                                Al mostrar esta iniciativa estarás contribuyendo a un cambio positivo en tu comunidad y accediendo a una oportunidad única sin costo para ti y ayudando a más emprendedores a crecer con un modelo sustentable.
+                            </p>
+                            <div class="card-profile-checklist">
+                                <div class="check-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Acompañamiento integral</span>
+                                </div>
+                                <div class="check-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Modelo probado</span>
+                                </div>
+                                <div class="check-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Impacto real</span>
+                                </div>
+                            </div>
+                            <a href="#contacto" class="card-profile-button primary">
+                                Únete ahora
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5v14M5 12h14"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Formulario de Contacto -->
-    <section class="contact-section" id="contacto">
-        <div class="container">
-            <div class="section-header contact-header">
-                <span class="section-tag centered">Contáctanos</span>
-                <h2 class="section-heading centered">Solicita Información sobre el Método PRIMA</h2>
-            </div>
+    <section class="contact-section-split" id="contacto">
+        <div class="contact-split-container">
+            <div class="contact-form-side">
+                <div class="contact-form-card">
+                    <div class="contact-form-header">
+                        <h2 class="contact-form-title">Solicita Información</h2>
+                        <p class="contact-form-subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
+                    </div>
 
-            <div class="contact-form-wrapper">
-                <form class="contact-form" action="https://formspree.io/f/xdkovple" method="POST">
+                    <form class="contact-form-modern" action="https://formspree.io/f/xdkovple" method="POST">
                     <input type="hidden" name="tipo_formulario" value="Método PRIMA">
 
                     <div class="form-row">
@@ -264,108 +437,91 @@
 
                     <p class="form-note">*Recuerda revisar la carpeta de promociones y spam</p>
                 </form>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contacto Directo -->
-    <section class="info-contacto-section">
-        <div class="container">
-            <div class="info-contacto-box">
-                <h3 class="info-title">Laboratorio de Innovación en Residuos PRIMA</h3>
-                <div class="info-items">
-                    <div class="info-item">
-                        <span class="info-icon">📍</span>
-                        <p>Calle Andes N° 504, frente a la Casa de la Cultura<br>San Fabián – Ñuble, Chile</p>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">📱</span>
-                        <p>WhatsApp: <a href="https://wa.me/56963240890" target="_blank">+56 9 6324 0890</a></p>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">🌐</span>
-                        <p>
-                            <a href="https://facebook.com" target="_blank">Facebook</a> ·
-                            <a href="https://instagram.com" target="_blank">Instagram</a> ·
-                            <a href="https://tiktok.com" target="_blank">TikTok</a>
-                        </p>
+            <div class="contact-image-side">
+                <div class="contact-image-content">
+                    <div class="contact-image-overlay"></div>
+                    <img src="images/metodo-prima2.png" alt="Únete a PRIMA" class="contact-hero-image">
+                    <div class="contact-image-text">
+                        <h3 class="contact-image-title">Transforma tu comunidad</h3>
+                        <p class="contact-image-description">Únete al movimiento de emprendedores que están haciendo la diferencia</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Wave Decoration -->
-    <div class="wave-section">
-        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-            <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="#2E7D32"></path>
-        </svg>
-    </div>
 
     <!-- Footer -->
         <!-- Footer Minimalista Moderno -->
-    <footer class="footer-modern">
-        <div class="container">
-            <div class="footer-modern-grid">
-                <!-- Logo y Copyright -->
-                <div class="footer-modern-brand">
-                    <img src="images/logo.png" alt="PRIMA" class="footer-modern-logo">
-                    <p class="footer-modern-copyright">©2025 Proyecto PRIMA.<br>Todos los derechos reservados.</p>
+    <footer class="footer-clean-new">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <!-- Logo y Descripción -->
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="PRIMA" class="footer-logo">
+                        <p class="footer-description">Somos un proyecto de sistemas de gestión de residuos con base en la educación ambiental y en el trabajo con las personas.</p>
+                        <div class="footer-social">
+                            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servicios -->
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Servicios</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html#servicios">Gestión de Residuos</a></li>
+                            <li><a href="metodo-prima-home.html">Método PRIMA</a></li>
+                            <li><a href="cultura-ambiental.html">Capacitaciones</a></li>
+                            <li><a href="#">Asesorías</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Nosotros -->
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Nosotros</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html#quienes-somos">Sobre PRIMA</a></li>
+                            <li><a href="equipo-prima.html">Equipo</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="#">Proyectos</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contacto -->
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Contacto</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://wa.me/56963240890" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:info@proyectoprima.com">Email</a></li>
+                            <li><a href="contacto.html">Formulario</a></li>
+                            <li><a href="#">Ubicación</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Servicios -->
-                <div class="footer-modern-column">
-                    <h4 class="footer-modern-title">Servicios</h4>
-                    <ul class="footer-modern-list">
-                        <li><a href="index.html#servicios">Gestión de Residuos</a></li>
-                        <li><a href="metodo-prima-home.html">Método PRIMA</a></li>
-                        <li><a href="cultura-ambiental.html">Capacitaciones</a></li>
-                        <li><a href="#">Asesorías</a></li>
-                    </ul>
-                </div>
-
-                <!-- Nosotros -->
-                <div class="footer-modern-column">
-                    <h4 class="footer-modern-title">Nosotros</h4>
-                    <ul class="footer-modern-list">
-                        <li><a href="index.html#quienes-somos">Sobre PRIMA</a></li>
-                        <li><a href="equipo-prima.html">Equipo</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                    </ul>
-                </div>
-
-                <!-- Recursos -->
-                <div class="footer-modern-column">
-                    <h4 class="footer-modern-title">Recursos</h4>
-                    <ul class="footer-modern-list">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Centro de Ayuda</a></li>
-                        <li><a href="#">Documentación</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contacto -->
-                <div class="footer-modern-column">
-                    <h4 class="footer-modern-title">Contáctanos</h4>
-                    <p class="footer-modern-contact-text">¿Preguntas o comentarios?<br>Nos encantaría saber de ti.</p>
-                    <div class="footer-modern-social">
-                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2025 Proyecto PRIMA. Todos los derechos reservados.</p>
+                    <div class="footer-legal">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
                     </div>
                 </div>
             </div>

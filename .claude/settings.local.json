@@ -17,7 +17,11 @@
       "Bash(start index.html)",
       "Bash(start:*)",
       "Bash(del \"C:\\Users\\gonza\\Desktop\\PROYECTO PRIMA\\update_footer.py\")",
-      "Bash(git checkout:*)"
+      "Read(//d/Documentos/AgenciaDos/Prima/recursos/**)",
+      "Bash(tree:*)",
+      "Bash(curl:*)",
+      "Bash(del nul)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []
