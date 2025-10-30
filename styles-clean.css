@@ -899,7 +899,7 @@ section {
 
 /* === Benefits Hero Section === */
 .benefits-hero-section {
-    padding: 80px 0;
+    padding: 50px 0;
     background-image: url('../images/se-recogieron-muchos-tipos-de-basura-en-el-piso-oscuro.webp');
     background-size: cover;
     background-position: center;
@@ -975,35 +975,49 @@ section {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.benefits-hero-gallery {
+.benefits-hero-list {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-.benefits-hero-gallery-item {
-    width: 70px;
-    height: 70px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
+.benefits-hero-item {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+
+    
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.benefits-hero-gallery-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+.benefits-hero-item:hover {
+
+    transform: translateX(8px);
 }
 
-.benefits-hero-description {
-    font-size: 16px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0 0 2.5rem 0;
-    max-width: 600px;
+.benefits-hero-item svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.benefits-hero-item-content {
+    flex: 1;
+}
+
+.benefits-hero-item-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.5rem 0;
+}
+
+.benefits-hero-item-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
 }
 
 .benefits-hero-btn {
@@ -1027,7 +1041,7 @@ section {
 
 /* === Course Content Section === */
 .course-content-section {
-    padding: 40px 0;
+    padding: 40px 0 80px;
     background: #ffffff;
 }
 
@@ -1185,6 +1199,394 @@ section {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+}
+
+/* === Pricing Section === */
+.pricing-section {
+    padding: 100px 0;
+    background-image: url('../images/vista-superior-del-concepto-de-reciclaje.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.pricing-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(249, 250, 251, 0.7) 0%, rgba(249, 250, 251) 100%);
+    z-index: 1;
+}
+
+.pricing-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.pricing-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-icon {
+    width: 56px;
+    height: 56px;
+    background: #f0fdf4;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-badge {
+    padding: 0.5rem 1rem;
+    background: #e0f2fe;
+    color: #0369a1;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pricing-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.pricing-subtitle {
+    font-size: 15px;
+    color: #6b7280;
+    margin: -1rem 0 0 0;
+}
+
+.pricing-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pricing-main {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.pricing-currency {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+.pricing-number {
+    font-family: 'Outfit', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1;
+}
+
+.pricing-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.pricing-original {
+    font-size: 16px;
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.pricing-note {
+    font-size: 13px;
+    color: #6b7280;
+    text-align: right;
+    line-height: 1.4;
+}
+
+.pricing-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.pricing-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pricing-feature-item svg {
+    flex-shrink: 0;
+}
+
+.pricing-feature-item span {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.pricing-guarantee {
+    display: flex;
+    align-items: start;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: #f0fdf4;
+    border-radius: 12px;
+    border: 1px solid #bbf7d0;
+}
+
+.pricing-guarantee svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pricing-guarantee span {
+    font-size: 13px;
+    color: #166534;
+    line-height: 1.6;
+}
+
+.pricing-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: #2E7D32;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+    width: 100%;
+}
+
+.pricing-btn:hover {
+    background: #1B5E20;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(27, 94, 32, 0.4);
+}
+
+/* === Corporate Card === */
+.corporate-card {
+    background: #2a2a2a;
+    border: 1px solid #4b5563;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+    height: 100%;
+}
+
+.corporate-card-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: #374151;
+}
+
+.corporate-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.corporate-card-content {
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.corporate-card-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.corporate-card-description {
+    font-size: 15px;
+    color: #d1d5db;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.corporate-card-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.corporate-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+}
+
+.corporate-feature svg {
+    flex-shrink: 0;
+}
+
+.corporate-feature span {
+    font-size: 14px;
+    color: #e5e7eb;
+    font-weight: 500;
+}
+
+.corporate-card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    margin: auto 2.5rem 2.5rem;
+    background: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid #2E7D32;
+}
+
+.corporate-card-btn:hover {
+    background: #2E7D32;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+}
+
+/* === Empresarial Section === */
+.empresarial-section {
+    padding: 100px 0;
+    background: #1f2937;
+}
+
+.empresarial-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.empresarial-image-card {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.empresarial-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.empresarial-badge {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(46, 125, 50, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.empresarial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.empresarial-icon {
+    font-size: 48px;
+}
+
+.empresarial-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.empresarial-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+.btn-empresarial {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    color: #1f2937;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    width: fit-content;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.btn-empresarial:hover {
+    background: #f3f4f6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* === Etapas Section - Nuevo diseño con imágenes === */
@@ -1357,17 +1759,20 @@ section {
         font-size: 32px;
     }
 
-    .benefits-hero-gallery {
-        gap: 0.75rem;
+    .benefits-hero-list {
+        gap: 1rem;
     }
 
-    .benefits-hero-gallery-item {
-        width: 60px;
-        height: 60px;
+    .benefits-hero-item {
+        padding: 1rem;
     }
 
-    .benefits-hero-description {
-        font-size: 15px;
+    .benefits-hero-item-title {
+        font-size: 16px;
+    }
+
+    .benefits-hero-item-description {
+        font-size: 14px;
     }
 
     /* Course Content Section - Responsive */
@@ -1423,8 +1828,144 @@ section {
         bottom: 1.5rem;
     }
 
+    /* Pricing Section - Responsive */
+    .pricing-section {
+        padding: 60px 0;
+    }
+
+    .pricing-container {
+        padding: 0 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .pricing-card {
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .pricing-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .pricing-title {
+        font-size: 28px;
+    }
+
+    .pricing-number {
+        font-size: 48px;
+    }
+
+    .pricing-amount {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .pricing-details {
+        align-items: flex-start;
+    }
+
+    .pricing-note {
+        text-align: left;
+    }
+
+    .pricing-features {
+        gap: 0.75rem;
+    }
+
+    .pricing-feature-item {
+        gap: 0.75rem;
+    }
+
+    .pricing-feature-item span {
+        font-size: 14px;
+    }
+
+    .pricing-guarantee span {
+        font-size: 12px;
+    }
+
+    /* Corporate Card - Responsive */
+    .corporate-card-image {
+        height: 220px;
+    }
+
+    .corporate-card-content {
+        padding: 1.5rem 2rem;
+    }
+
+    .corporate-card-title {
+        font-size: 22px;
+    }
+
+    .corporate-card-description {
+        font-size: 14px;
+    }
+
+    .corporate-feature span {
+        font-size: 13px;
+    }
+
+    .corporate-card-btn {
+        margin: 0 2rem 2rem;
+        padding: 0.875rem 1.5rem;
+        font-size: 15px;
+    }
+
     .metodo-feature-description {
         font-size: 14px;
+    }
+
+    /* Empresarial Section - Responsive */
+    .empresarial-section {
+        padding: 60px 0;
+    }
+
+    .empresarial-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 0 1rem;
+    }
+
+    .empresarial-image-card {
+        max-width: 100%;
+    }
+
+    .empresarial-image-card img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .empresarial-badge {
+        padding: 0.75rem 1.25rem;
+        gap: 0.5rem;
+        font-size: 13px;
+    }
+
+    .empresarial-badge svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .empresarial-icon {
+        font-size: 40px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .empresarial-title {
+        font-size: 28px;
+    }
+
+    .empresarial-text {
+        font-size: 15px;
+    }
+
+    .btn-empresarial {
+        padding: 1rem 1.5rem;
+        font-size: 15px;
     }
 
     /* Etapas Section - Responsive */
@@ -3393,7 +3934,7 @@ section {
 .card-profile-description {
     font-size: 15px;
     line-height: 1.6;
-    color: #a0a0a0;
+    color: #d1d5db;
     margin: 0;
 }
 
@@ -3419,6 +3960,11 @@ section {
     align-items: flex-start;
     gap: 12px;
 }
+.check-item-light {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
 
 .check-icon {
     flex-shrink: 0;
@@ -3426,6 +3972,11 @@ section {
 }
 
 .check-item span {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d1d5db;
+}
+.check-item-light span {
     font-size: 14px;
     line-height: 1.5;
     color: #6b7280;
