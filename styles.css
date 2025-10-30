@@ -746,11 +746,11 @@ p {
 }
 
 .btn-teaser-secondary {
-    background: var(--azul-prima);
+    background: var(--verde-bosque);
 }
 
 .btn-teaser-secondary:hover {
-    background: #005f7a;
+    background: #1B5E20;
 }
 
 /* === Cultura Ambiental para Empresas === */
@@ -1321,6 +1321,11 @@ p {
 .contact-section {
     padding: 80px 0;
     background: #ffffff;
+}
+
+.contact-section-split {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #ffffff 0%, #e8f5e9 100%);
 }
 
 .contacto-subtitulo {
