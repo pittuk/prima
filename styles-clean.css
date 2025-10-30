@@ -1740,7 +1740,7 @@ section {
     font-size: 16px;
     line-height: 1.7;
     color: #6b7280;
-    margin-bottom: 2rem;
+
 }
 
 .btn-hero-explore {
@@ -2330,7 +2330,7 @@ section {
 
 /* Contact Form Section */
 .contact-section-modern {
-    background: #ffffff;
+    background: linear-gradient(to bottom, white 0%, #f9fafb 100%);
     padding: 100px 0;
 }
 
@@ -3034,7 +3034,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 16px 0;
+    margin: 10px 0;
+  
 }
 
 .check-item {
@@ -3051,7 +3052,7 @@ section {
 .check-item span {
     font-size: 14px;
     line-height: 1.5;
-    color: #d0d0d0;
+    color: #6b7280;
 }
 
 /* Estadísticas */
