@@ -86,6 +86,116 @@ body {
     box-shadow: 0 4px 12px rgba(27, 94, 32, 0.4);
 }
 
+/* Menú Hamburguesa */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+    position: relative;
+}
+
+.hamburger-line {
+    width: 28px;
+    height: 3px;
+    background: #1B5E20;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Ocultar/mostrar botones de contacto según viewport */
+.mobile-contact {
+    display: none;
+}
+
+.desktop-contact {
+    display: inline-block;
+}
+
+/* Responsive Header */
+@media (max-width: 968px) {
+    .hamburger-menu {
+        display: flex !important;
+    }
+
+    .nav-clean {
+        position: fixed;
+        top: 82px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        display: flex !important;
+    }
+
+    .nav-clean.active {
+        max-height: 500px;
+    }
+
+    .nav-clean .nav-item {
+        display: block !important;
+    }
+
+    .nav-item {
+        width: 100%;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #f3f4f6;
+        text-align: left;
+    }
+
+    .nav-item:hover {
+        background: #f9fafb;
+    }
+
+    .desktop-contact {
+        display: none !important;
+    }
+
+    .mobile-contact {
+        display: block !important;
+        width: 100%;
+        text-align: center;
+        border-bottom: none;
+        margin-top: 0.5rem;
+    }
+
+    .header-container {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .logo-image {
+        height: 40px;
+    }
+
+    .header-container {
+        padding: 0.875rem 1rem;
+    }
+}
+
 /* === Hero Limpio === */
 .hero-clean {
     padding: 140px 0 80px;
@@ -3509,6 +3619,392 @@ section {
     box-shadow: 0 4px 12px rgba(27, 94, 32, 0.4);
 }
 
+/* ==========================
+   MISIÓN Y VISIÓN - DISEÑO MODERNO
+   ========================== */
+
+.mision-vision-modern {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.mv-modern-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 0;
+}
+
+.mv-modern-card {
+    border-radius: 24px;
+    padding: 40px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.mv-modern-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.mv-modern-card.light {
+    background: #f9fafb;
+}
+
+.mv-modern-card.dark {
+    background:
+        linear-gradient(135deg, rgba(46, 125, 50, 0.8) 0%, rgba(27, 94, 32, 0.8) 100%),
+        url('../images/bolsa-ecologica-en-el-escritorio.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    position: relative;
+}
+
+.mv-modern-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+}
+
+.mv-badge-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mv-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.mv-modern-card.light .mv-badge {
+    background: rgba(46, 125, 50, 0.1);
+    color: #1B5E20;
+    border: 1px solid rgba(46, 125, 50, 0.2);
+}
+
+.mv-modern-card.light .mv-badge svg {
+    stroke: #1B5E20;
+}
+
+.mv-modern-card.dark .mv-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mv-modern-card.dark .mv-badge svg {
+    stroke: #ffffff;
+}
+
+.mv-modern-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.mv-modern-card.light .mv-modern-text {
+    color: #4b5563;
+}
+
+.mv-modern-card.dark .mv-modern-text {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.mv-modern-image {
+    margin-top: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 180px;
+    width: 100%;
+}
+
+.mv-modern-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mv-modern-card:hover .mv-modern-image img {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .mv-modern-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .mv-modern-card {
+        padding: 32px;
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 640px) {
+    .mision-vision-modern {
+        padding: 60px 0;
+    }
+
+    .mv-modern-card {
+        padding: 24px;
+    }
+
+    .mv-modern-text {
+        font-size: 15px;
+    }
+
+    .mv-modern-image {
+        height: 150px;
+    }
+}
+
+/* ==========================
+   TEAM CARDS - DISEÑO MODERNO
+   ========================== */
+
+.team-section {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.team-member {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.member-photo {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    position: relative;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.member-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 4px 0;
+    line-height: 1.2;
+}
+
+.member-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1B5E20;
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.member-role-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    background: #f3f4f6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.member-role-icon-wrapper svg {
+    stroke: #1B5E20;
+}
+
+.team-member:hover .member-role-icon-wrapper {
+    background: #e8f5e9;
+}
+
+.member-bio {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin: 0 0 20px 0;
+    flex: 1;
+}
+
+.member-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Estilos no utilizados - eliminados para limpieza */
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .member-photo {
+        height: 240px;
+    }
+}
+
+/* ==========================
+   VALORES - DISEÑO MODERNO
+   ========================== */
+
+.valores-section-modern {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+.valores-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.valor-card-modern {
+    background: #ffffff;
+    padding: 32px 28px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.valor-card-modern:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+    border-color: #d1d5db;
+}
+
+.valor-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background: #f3f4f6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.valor-card-modern:hover .valor-icon-wrapper {
+    background: #e8f5e9;
+}
+
+.valor-icon-wrapper svg {
+    stroke: #1B5E20;
+    transition: all 0.3s ease;
+}
+
+.valor-card-modern:hover .valor-icon-wrapper svg {
+    stroke: #2E7D32;
+    transform: scale(1.1);
+}
+
+.valor-title-modern {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.valor-text-modern {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .valores-grid-modern {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .valores-section-modern {
+        padding: 60px 0;
+    }
+
+    .valores-grid-modern {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .valor-card-modern {
+        padding: 28px 24px;
+    }
+
+    .valor-title-modern {
+        font-size: 18px;
+    }
+}
+
 /* Footer Minimalista - Estilo Heilsa */
 .footer-minimal {
     background: #fafafa;
@@ -3709,7 +4205,19 @@ section {
     }
 
     .hero-clean-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .hero-clean-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-clean-buttons .btn-primary-clean,
+    .hero-clean-buttons .btn-secondary-clean {
+        width: 100%;
+        text-align: center;
     }
 
     .section-heading {
