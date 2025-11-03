@@ -1,0 +1,135 @@
+========================================
+INSTRUCCIONES DE CONFIGURACIÓN DE LOS FORMULARIOS
+Proyecto PRIMA - Hostinger
+========================================
+
+Los formularios del sitio han sido configurados para funcionar con PHP en hosting compartido de Hostinger.
+
+ARCHIVOS CREADOS:
+─────────────────
+
+1. enviar-formulario.php
+   - Script PHP que procesa AMBOS formularios (contacto y método PRIMA)
+   - Valida los campos según el tipo de formulario
+   - Envía el correo electrónico con los campos correspondientes
+   - Redirige al usuario a la página correcta
+
+2. contacto-gracias.html
+   - Página de confirmación cuando el envío es exitoso
+   - Incluye opciones de contacto alternativas
+   - Se usa para ambos formularios
+
+3. contacto.html (actualizado)
+   - Formulario ahora apunta a enviar-formulario.php
+   - Muestra mensajes de error si hay problemas
+   - Incluye: nombre, apellido, teléfono, email, ciudad, comuna, motivo, comentario
+
+4. metodo-prima-home.html (actualizado)
+   - Formulario ahora apunta a enviar-formulario.php
+   - Muestra mensajes de error si hay problemas
+   - Incluye: nombre, apellido, teléfono, email, ciudad, comuna, experiencia con residuos,
+     experiencia con herramientas, funcionario municipal, comentario opcional
+
+CONFIGURACIÓN NECESARIA EN HOSTINGER:
+──────────────────────────────────────
+
+1. CAMBIAR EL EMAIL DE DESTINO:
+
+   Abrir el archivo: enviar-formulario.php
+   Buscar la línea 3:
+
+   $destinatario = "info@proyectoprima.com";
+
+   Cambiar "info@proyectoprima.com" por el email real donde quieres recibir los mensajes.
+
+2. VERIFICAR CONFIGURACIÓN DE EMAIL EN HOSTINGER:
+
+   - Asegúrate de que el dominio tenga configurado el servicio de email
+   - El email "no-reply@proyectoprima.com" (línea 113 del PHP) debe existir o cambiarlo por uno válido
+   - Hostinger usa la función mail() de PHP que funciona automáticamente
+
+3. PERMISOS DE ARCHIVOS:
+
+   Los archivos PHP normalmente necesitan permisos 644:
+   - enviar-formulario.php: 644
+
+   Si no funciona, puedes probar con 755, pero 644 es más seguro.
+
+IMPORTANTE - PRUEBAS:
+────────────────────
+
+Después de subir los archivos a Hostinger:
+
+FORMULARIO DE CONTACTO GENERAL:
+1. Ir a: https://proyectoprima.com/contacto.html
+2. Completar el formulario
+3. Enviar
+
+FORMULARIO DE MÉTODO PRIMA:
+1. Ir a: https://proyectoprima.com/metodo-prima-home.html
+2. Scroll hasta el formulario de "Solicita Información"
+3. Completar el formulario
+4. Enviar
+
+Si funciona correctamente:
+✓ Te redirigirá a contacto-gracias.html (para ambos formularios)
+✓ Recibirás un email en el destinatario configurado con los datos correspondientes
+
+Si hay un error:
+✗ Te redirigirá a la página del formulario correspondiente con un mensaje de error en rojo
+
+SOLUCIÓN DE PROBLEMAS:
+──────────────────────
+
+Problema: "No llegan los correos"
+Solución:
+  - Verifica que el email de destino sea correcto
+  - Revisa la carpeta de spam
+  - Contacta con soporte de Hostinger para verificar que la función mail() esté habilitada
+  - Verifica que el dominio tenga registros SPF configurados
+
+Problema: "Error 500"
+Solución:
+  - Verifica los permisos del archivo PHP (644)
+  - Revisa que la sintaxis del PHP sea correcta
+  - Activa display_errors en PHP temporalmente para ver el error específico
+
+Problema: "El formulario no envía nada"
+Solución:
+  - Verifica que la URL en contacto.html sea correcta: action="enviar-formulario.php"
+  - Asegúrate de que todos los archivos estén en el mismo directorio
+
+ALTERNATIVAS SI PHP MAIL() NO FUNCIONA:
+───────────────────────────────────────
+
+Si Hostinger tiene problemas con mail(), puedes usar PHPMailer o SMTP:
+
+1. Opción PHPMailer (recomendado para Hostinger):
+   - Descargar PHPMailer
+   - Configurar con las credenciales SMTP de tu email de Hostinger
+
+2. Opción SMTP directo:
+   - Usar la función smtp de PHP
+   - Configurar con: mail.proyectoprima.com (o el servidor SMTP de Hostinger)
+
+Si necesitas ayuda con estas alternativas, contacta con soporte técnico.
+
+SEGURIDAD:
+──────────
+
+El script incluye:
+✓ Validación de todos los campos obligatorios
+✓ Sanitización de datos con strip_tags()
+✓ Validación de email con filter_var()
+✓ Protección contra inyección de código
+✓ Verificación de método POST
+
+CONTACTO:
+─────────
+
+Email: info@proyectoprima.com
+WhatsApp: +56 9 6324 0890
+
+========================================
+Última actualización: Noviembre 2025
+========================================

@@ -351,7 +351,10 @@
                         <p class="contact-form-subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
                     </div>
 
-                    <form class="contact-form-modern" action="https://formspree.io/f/xdkovple" method="POST">
+                    <!-- Mensaje de error/éxito -->
+                    <div id="mensaje-formulario" class="mensaje-formulario"></div>
+
+                    <form class="contact-form-modern" action="enviar-formulario.php" method="POST" id="formulario-metodo-prima">
                     <input type="hidden" name="tipo_formulario" value="Método PRIMA">
 
                     <div class="form-row">
@@ -561,6 +564,22 @@
                 hamburgerMenu.classList.remove('active');
                 navMenu.classList.remove('active');
             });
+        });
+
+        // Mostrar mensajes de error o éxito del formulario
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+            const mensajeDiv = document.getElementById('mensaje-formulario');
+
+            if (error) {
+                mensajeDiv.textContent = error;
+                mensajeDiv.className = 'mensaje-formulario mensaje-error';
+                mensajeDiv.style.display = 'block';
+
+                // Scroll al mensaje
+                mensajeDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
         });
     </script>
 </body>

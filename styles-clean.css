@@ -3599,6 +3599,219 @@ section {
     transform: translateY(0);
 }
 
+/* Mensajes de formulario */
+.mensaje-formulario {
+    display: none;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.mensaje-error {
+    background-color: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.mensaje-exito {
+    background-color: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+/* Página de Confirmación */
+.confirmacion-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+.confirmacion-content {
+    max-width: 700px;
+    text-align: center;
+}
+
+.icono-exito {
+    display: inline-flex;
+    width: 120px;
+    height: 120px;
+    background: #f0fdf4;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.confirmacion-titulo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1B5E20;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.confirmacion-texto {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirmacion-info {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.info-item:not(:last-child) {
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.info-item svg {
+    flex-shrink: 0;
+}
+
+.info-item span {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.confirmacion-acciones {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.btn-secondary-clean {
+    display: inline-block;
+    padding: 14px 32px;
+    background: white;
+    color: #1B5E20;
+    border: 2px solid #1B5E20;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-clean:hover {
+    background: #f9fafb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.2);
+}
+
+.contacto-alternativo {
+    background: #f9fafb;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.contacto-alternativo-titulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.contacto-opciones {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto-opcion {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    background: white;
+    color: #1B5E20;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.contacto-opcion:hover {
+    background: #1B5E20;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.3);
+}
+
+@media (max-width: 768px) {
+    .confirmacion-titulo {
+        font-size: 28px;
+    }
+
+    .confirmacion-texto {
+        font-size: 16px;
+    }
+
+    .confirmacion-acciones {
+        flex-direction: column;
+    }
+
+    .confirmacion-acciones a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacto-opciones {
+        flex-direction: column;
+    }
+
+    .contacto-opcion {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 /* Equipo CTA Button */
 .btn-equipo-cta {
     display: inline-block;
