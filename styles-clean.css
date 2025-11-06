@@ -3448,7 +3448,7 @@ section {
     text-decoration: none;
     font-size: 17px;
     font-weight: 700;
-    border-radius: 14px;
+    border-radius: 50px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 8px 24px rgba(46, 125, 50, 0.3);
     max-width: fit-content;
