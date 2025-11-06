@@ -27,11 +27,22 @@
 
             <nav class="nav-clean" id="navMenu">
                 <a href="index.html#inicio" class="nav-item">Inicio</a>
-                <a href="nosotros.html" class="nav-item">Nosotros</a>
+
+                <!-- Menú Desplegable Nosotros -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-toggle">
+                        Nosotros
+                        <span class="dropdown-arrow">▼</span>
+                    </span>
+                    <div class="dropdown-menu">
+                        <a href="nosotros.html" class="dropdown-item">Sobre PRIMA</a>
+                        <a href="nosotros.html#team-section" class="dropdown-item">Equipo</a>
+                    </div>
+                </div>
 
                 <a href="metodo-prima-home.html" class="nav-item">Método PRIMA</a>
                 <a href="cultura-ambiental.html" class="nav-item">Cultura Ambiental</a>
-                <a href="nosotros.html#team-section" class="nav-item">Equipo</a>
+                <a href="agenda.html" class="nav-item">Agenda</a>
                 <a href="contacto.html" class="btn-contact-header mobile-contact">Contacto</a>
             </nav>
 
@@ -449,6 +460,48 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Card 3: Agenda tu Evaluación -->
+                <div class="cta-card">
+                    <div class="cta-card-image">
+                        <img src="images/tmpinn_h4r3.webp" alt="Agenda tu Evaluación">
+                    </div>
+                    <div class="cta-card-content">
+                        <h3 class="cta-card-title">Agenda tu Evaluación ✓</h3>
+                        <p class="cta-card-description">
+                            Reserva una evaluación de sostenibilidad empresarial y descubre cómo mejorar tu impacto.
+                        </p>
+                        <div class="cta-card-stats">
+                            <div class="cta-stat">
+                                <span class="cta-stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="cta-stat-text">30 Minutos</span>
+                            </div>
+                            <div class="cta-stat">
+                                <span class="cta-stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                </span>
+                                <span class="cta-stat-text">Sin Costo</span>
+                            </div>
+                        </div>
+                        <a href="agenda.html" class="btn-cta-card">
+                            Agendar Ahora
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -657,7 +710,7 @@
         console.log('%c🌱 PRIMA', 'color: #2E7D32; font-size: 16px; font-weight: bold;');
     </script>
 
-    <!-- Script para Menú Hamburguesa -->
+    <!-- Script para Menú Hamburguesa y Dropdown -->
     <script>
         const hamburgerMenu = document.getElementById('hamburgerMenu');
         const navMenu = document.getElementById('navMenu');
@@ -670,6 +723,28 @@
         // Cerrar menú al hacer clic en un enlace
         const navItems = document.querySelectorAll('.nav-item');
         navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                hamburgerMenu.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Funcionalidad dropdown en móvil
+        const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                // Solo en móvil (menos de 968px)
+                if (window.innerWidth <= 968) {
+                    e.preventDefault();
+                    const dropdown = this.parentElement;
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+
+        // Cerrar menú al hacer clic en items del dropdown
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        dropdownItems.forEach(item => {
             item.addEventListener('click', function() {
                 hamburgerMenu.classList.remove('active');
                 navMenu.classList.remove('active');

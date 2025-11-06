@@ -68,6 +68,84 @@ body {
     color: #2E7D32;
 }
 
+/* === Menú Desplegable === */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.nav-dropdown-toggle:hover {
+    color: #2E7D32;
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+.nav-dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.75rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.dropdown-item:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.dropdown-item:hover {
+    background: #f9fafb;
+    color: #2E7D32;
+    padding-left: 1.5rem;
+}
+
 .btn-contact-header {
     padding: 0.625rem 1.5rem;
     background: #1B5E20;
@@ -167,6 +245,48 @@ body {
 
     .nav-item:hover {
         background: #f9fafb;
+    }
+
+    /* Dropdown responsive en móvil */
+    .nav-dropdown {
+        width: 100%;
+    }
+
+    .nav-dropdown-toggle {
+        width: 100%;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #f3f4f6;
+        justify-content: space-between;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        box-shadow: none;
+        border-radius: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        margin-top: 0;
+        background: #f9fafb;
+    }
+
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown.active .dropdown-menu {
+        max-height: 300px;
+    }
+
+    .dropdown-item {
+        padding: 0.875rem 2.5rem;
+        border-bottom: 1px solid #e5e7eb;
+        background: #f9fafb;
+    }
+
+    .dropdown-item:hover {
+        background: #f3f4f6;
+        padding-left: 3rem;
     }
 
     .desktop-contact {
@@ -2864,8 +2984,8 @@ section {
 
 .cta-cards-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -2982,7 +3102,14 @@ section {
 }
 
 /* Responsive */
-@media (max-width: 968px) {
+@media (max-width: 1200px) {
+    .cta-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
     .cta-cards-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -3225,6 +3352,363 @@ section {
     font-size: 16px;
     font-weight: 700;
     color: #2E7D32;
+}
+
+/* ==========================================
+   PÁGINA AGENDA
+   ========================================== */
+
+/* === Sección Agenda Principal === */
+.agenda-section {
+    padding: 140px 0 100px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fdf9 50%, #e8f5e9 100%);
+}
+
+.agenda-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: stretch;
+}
+
+.agenda-content {
+    max-width: 600px;
+}
+
+.agenda-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.agenda-description {
+    font-size: 18px;
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.agenda-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.benefit-item-agenda {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.benefit-icon-agenda {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: rgba(46, 125, 50, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-text-agenda h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.benefit-text-agenda p {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.agenda-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn-primary-agenda {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 36px;
+    background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(46, 125, 50, 0.3);
+    max-width: fit-content;
+}
+
+.btn-primary-agenda:hover {
+    background: linear-gradient(135deg, #1B5E20 0%, #0d3818 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(46, 125, 50, 0.4);
+}
+
+.agenda-disclaimer {
+    font-size: 13px;
+    color: #64748b;
+    font-style: italic;
+    margin: 0;
+}
+
+.agenda-image-wrapper {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    min-height: 600px;
+}
+
+.agenda-main-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 24px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.agenda-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), transparent);
+    pointer-events: none;
+}
+
+/* === Sección Calendario === */
+.calendario-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.calendario-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.calendario-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.calendario-subtitle {
+    font-size: 18px;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.calendario-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#my-cal-inline-30min {
+    min-height: 700px;
+    border-radius: 16px;
+    overflow: hidden !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.calendario-placeholder {
+    background: linear-gradient(135deg, #f8fdf9 0%, #e8f5e9 100%);
+    padding: 80px 40px;
+    border-radius: 24px;
+    text-align: center;
+    border: 2px dashed rgba(46, 125, 50, 0.3);
+}
+
+.placeholder-icon {
+    margin-bottom: 24px;
+}
+
+.placeholder-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2E7D32;
+    margin-bottom: 16px;
+}
+
+.placeholder-text {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto 32px;
+}
+
+.placeholder-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-whatsapp-agenda,
+.btn-email-agenda {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.btn-whatsapp-agenda {
+    background: #25D366;
+    color: white;
+}
+
+.btn-whatsapp-agenda:hover {
+    background: #20b358;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.btn-email-agenda {
+    background: white;
+    color: #2E7D32;
+    border: 2px solid #2E7D32;
+}
+
+.btn-email-agenda:hover {
+    background: #2E7D32;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3);
+}
+
+/* === ¿Por qué realizar una evaluación? === */
+.why-evaluation-section {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #f6f9f8 0%, #f9fafb 100%);
+}
+
+.why-evaluation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.evaluation-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.evaluation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(46, 125, 50, 0.2);
+}
+
+.evaluation-icon {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.evaluation-card-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.evaluation-card-text {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* === Responsive Agenda === */
+@media (max-width: 1024px) {
+    .agenda-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .agenda-content {
+        max-width: 100%;
+    }
+
+    .why-evaluation-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .agenda-section {
+        padding: 120px 0 80px;
+    }
+
+    .agenda-title {
+        font-size: 32px;
+    }
+
+    .agenda-image-wrapper {
+        min-height: 400px;
+    }
+
+    .calendario-title {
+        font-size: 32px;
+    }
+
+    #my-cal-inline-30min {
+        min-height: 600px;
+    }
+
+    .calendario-placeholder {
+        padding: 60px 30px;
+    }
+
+    .placeholder-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-whatsapp-agenda,
+    .btn-email-agenda {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-primary-agenda {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* === PÁGINA DE CONTACTO MODERNA === */

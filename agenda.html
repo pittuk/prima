@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - PRIMA</title>
+    <title>Agenda tu Evaluación - PRIMA</title>
     <link rel="icon" type="image/png" href="images/Proyecto-prima-favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-clean.css?v=6">
+    <link rel="stylesheet" href="styles-clean.css?v=11">
 </head>
 <body>
     <!-- Header Limpio y Profesional -->
@@ -50,123 +50,158 @@
         </div>
     </header>
 
-   <!-- Hero Método PRIMA - Estilo Home -->
-    <section class="hero-clean" id="inicio">
-        <div class="hero-clean-container">
-            <div class="hero-clean-image">
-                <img src="images/mujer-joven-clasificacion-de-basura-concepto-de-reciclaje-cero-desperdicio.webp" alt="Método PRIMA - Emprendimiento con residuos" class="hero-img-clean">
-            </div>
-            <div class="hero-clean-content">
-                <span class="hero-label">Método PRIMA</span>
-                <h1 class="hero-clean-title">¿Quieres ser parte del cambio?
-</h1>
-                <p class="hero-clean-text">
-                    Te acompañamos paso a paso para implementar PRIMA en tu comuna, colegio o empresa.
-                </p>
+    <!-- Sección Agenda - Diseño Dos Columnas -->
+    <section class="agenda-section">
+        <div class="container">
+            <div class="agenda-grid">
+                <!-- Columna Izquierda - Contenido -->
+                <div class="agenda-content">
+                    <span class="section-tag">AGENDA TU EVALUACIÓN</span>
+                    <h1 class="agenda-title">30 min. EVALUACIÓN de Sostenibilidad Empresarial</h1>
 
-                <div class="hero-clean-buttons">
-                    <a href="#formulario" class="btn-primary-clean">Comienza ahora</a>
+                    <p class="agenda-description">
+                        Descubre cómo tu empresa puede mejorar su impacto ambiental y social.
+                        En esta sesión evaluaremos tus prácticas actuales y te daremos recomendaciones personalizadas.
+                    </p>
+
+                    <div class="agenda-benefits">
+                        <div class="benefit-item-agenda">
+                            <div class="benefit-icon-agenda">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 11l3 3L22 4"></path>
+                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                </svg>
+                            </div>
+                            <div class="benefit-text-agenda">
+                                <h3>Análisis Personalizado</h3>
+                                <p>Evaluamos tu empresa y sus necesidades específicas</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item-agenda">
+                            <div class="benefit-icon-agenda">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="benefit-text-agenda">
+                                <h3>Solo 30 Minutos</h3>
+                                <p>Una sesión breve pero completa para conocer tu situación</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item-agenda">
+                            <div class="benefit-icon-agenda">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="benefit-text-agenda">
+                                <h3>Asesoría Experta</h3>
+                                <p>Nuestro equipo te guiará hacia la sostenibilidad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agenda-cta">
+                        <a href="#calendario" class="btn-primary-agenda">
+                            Reserva tu Evaluación Ahora
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <p class="agenda-disclaimer">* Sujeto a confirmación final.</p>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha - Imagen -->
+                <div class="agenda-image-wrapper">
+                    <img src="images/tmpinn_h4r3.webp" alt="Evaluación de Sostenibilidad PRIMA" class="agenda-main-image">
+                    <div class="agenda-image-overlay"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Formulario de Contacto Moderno -->
-    <section class="contact-section-modern" id="formulario">
+    <!-- Sección Calendario/Formulario -->
+    <section class="calendario-section" id="calendario">
         <div class="container">
-            <div class="contact-intro">
-                <span class="contact-badge">Contáctanos</span>
-                <h2 class="contact-main-title">Completa el formulario y nos pondremos en contacto contigo</h2>
+            <div class="calendario-header">
+                <h2 class="calendario-title">Selecciona tu Horario</h2>
+                <p class="calendario-subtitle">Elige el día y hora que mejor te convenga para tu evaluación de sostenibilidad</p>
             </div>
 
-            <div class="contact-form-modern">
-                <!-- Mensaje de error/éxito -->
-                <div id="mensaje-formulario" class="mensaje-formulario"></div>
+            <div class="calendario-wrapper">
+                <!-- Cal inline embed code begins -->
+                <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-30min"></div>
+                <script type="text/javascript">
+                  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                Cal("init", "30min", {origin:"https://app.cal.com"});
 
-                <form action="enviar-formulario.php" method="POST" id="formulario-contacto">
-                    <input type="hidden" name="tipo_formulario" value="Contacto General">
+                  Cal.ns["30min"]("inline", {
+                    elementOrSelector:"#my-cal-inline-30min",
+                    config: {"layout":"month_view"},
+                    calLink: "luis-cruz-dibjsn/30min",
+                  });
 
-                    <div class="form-grid-2">
-                        <div class="form-field">
-                            <label>Nombre *</label>
-                            <input type="text" name="nombre" placeholder="Nombre" required>
-                        </div>
-                        <div class="form-field">
-                            <label>Apellido *</label>
-                            <input type="text" name="apellido" placeholder="Apellido" required>
-                        </div>
-                    </div>
-
-                    <div class="form-grid-2">
-                        <div class="form-field">
-                            <label>Teléfono de Contacto *</label>
-                            <input type="tel" name="telefono" placeholder="Teléfono" required>
-                        </div>
-                        <div class="form-field">
-                            <label>Email *</label>
-                            <input type="email" name="email" placeholder="Email" required>
-                        </div>
-                    </div>
-
-                    <div class="form-grid-2">
-                        <div class="form-field">
-                            <label>Ciudad *</label>
-                            <input type="text" name="ciudad" placeholder="Ingresa tu Ciudad" required>
-                        </div>
-                        <div class="form-field">
-                            <label>Comuna *</label>
-                            <input type="text" name="comuna" placeholder="Ingresa tu Comuna" required>
-                        </div>
-                    </div>
-
-                    <div class="form-field-full">
-                        <label>Motivo del Contacto</label>
-                        <div class="options-grid">
-                            <label class="option-card">
-                                <input type="radio" name="motivo" value="metodo-prima" checked>
-                                <span class="option-text">Quiero emprender con residuos (Método PRIMA)</span>
-                                <span class="option-arrow">→</span>
-                            </label>
-                            <label class="option-card">
-                                <input type="radio" name="motivo" value="cultura-ambiental">
-                                <span class="option-text">Me interesa el curso de Cultura Ambiental</span>
-                                <span class="option-arrow">→</span>
-                            </label>
-                            <label class="option-card">
-                                <input type="radio" name="motivo" value="empresa">
-                                <span class="option-text">Pertenezco a una Empresa</span>
-                                <span class="option-arrow">→</span>
-                            </label>
-                            <label class="option-card">
-                                <input type="radio" name="motivo" value="municipio">
-                                <span class="option-text">Representante de municipio</span>
-                                <span class="option-arrow">→</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-field-full">
-                        <label>Comentario *</label>
-                        <textarea name="comentario" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
-                    </div>
-
-                    <div class="form-field-full">
-                        <label class="consent-checkbox">
-                            <input type="checkbox" name="consentimiento" required>
-                            <span>Doy consentimiento para que Proyecto PRIMA utilice mi información de contacto para envío de información educativa o promocional.</span>
-                        </label>
-                    </div>
-
-                    <button type="submit" class="btn-submit-modern">Enviar Mensaje</button>
-                </form>
+                  Cal.ns["30min"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#138b58"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
+                </script>
+                <!-- Cal inline embed code ends -->
             </div>
         </div>
     </section>
 
-   
+    <!-- ¿Por qué agendar una evaluación? -->
+    <section class="why-evaluation-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag-inverse">BENEFICIOS</span>
+                <h2 class="section-heading centered">¿Por qué realizar una Evaluación de Sostenibilidad?</h2>
+            </div>
+
+            <div class="why-evaluation-grid">
+                <div class="evaluation-card">
+                    <div class="evaluation-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="evaluation-card-title">Reduce Costos</h3>
+                    <p class="evaluation-card-text">Identifica áreas de ahorro en recursos, energía y gestión de residuos</p>
+                </div>
+
+                <div class="evaluation-card">
+                    <div class="evaluation-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="evaluation-card-title">Impacto Ambiental</h3>
+                    <p class="evaluation-card-text">Mide y mejora tu huella de carbono y contribución al planeta</p>
+                </div>
+
+                <div class="evaluation-card">
+                    <div class="evaluation-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <polyline points="17 11 19 13 23 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="evaluation-card-title">Mejora tu Imagen</h3>
+                    <p class="evaluation-card-text">Destaca como empresa responsable y comprometida con el futuro</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-        <!-- Footer Minimalista Moderno -->
     <footer class="footer-clean-new">
         <div class="footer-container">
             <div class="footer-content">
@@ -201,7 +236,7 @@
                             <li><a href="index.html#servicios">Gestión de Residuos</a></li>
                             <li><a href="metodo-prima-home.html">Método PRIMA</a></li>
                             <li><a href="cultura-ambiental.html">Capacitaciones</a></li>
-                            <li><a href="metodo-prima-home.html">Asesorías</a></li>
+                            <li><a href="agenda.html">Evaluaciones</a></li>
                         </ul>
                     </div>
 
@@ -242,13 +277,13 @@
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/56963240890" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
-        <div class="whatsapp-tooltip">Únete a nuestra comunidad</div>
+        <div class="whatsapp-tooltip">Agenda tu evaluación</div>
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
         </svg>
     </a>
 
-    <!-- Script para Menú Hamburguesa -->
+    <!-- Script para Menú Hamburguesa y Dropdown -->
     <script>
         const hamburgerMenu = document.getElementById('hamburgerMenu');
         const navMenu = document.getElementById('navMenu');
@@ -289,20 +324,18 @@
             });
         });
 
-        // Mostrar mensajes de error o éxito del formulario
-        window.addEventListener('DOMContentLoaded', function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const error = urlParams.get('error');
-            const mensajeDiv = document.getElementById('mensaje-formulario');
-
-            if (error) {
-                mensajeDiv.textContent = error;
-                mensajeDiv.className = 'mensaje-formulario mensaje-error';
-                mensajeDiv.style.display = 'block';
-
-                // Scroll al mensaje
-                mensajeDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
+        // Smooth scroll para el botón de reserva
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
     </script>
 </body>

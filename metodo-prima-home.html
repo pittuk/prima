@@ -27,11 +27,22 @@
 
             <nav class="nav-clean" id="navMenu">
                 <a href="index.html#inicio" class="nav-item">Inicio</a>
-                <a href="nosotros.html" class="nav-item">Nosotros</a>
+
+                <!-- Menú Desplegable Nosotros -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-toggle">
+                        Nosotros
+                        <span class="dropdown-arrow">▼</span>
+                    </span>
+                    <div class="dropdown-menu">
+                        <a href="nosotros.html" class="dropdown-item">Sobre PRIMA</a>
+                        <a href="nosotros.html#team-section" class="dropdown-item">Equipo</a>
+                    </div>
+                </div>
 
                 <a href="metodo-prima-home.html" class="nav-item">Método PRIMA</a>
                 <a href="cultura-ambiental.html" class="nav-item">Cultura Ambiental</a>
-                <a href="nosotros.html#team-section" class="nav-item">Equipo</a>
+                <a href="agenda.html" class="nav-item">Agenda</a>
                 <a href="contacto.html" class="btn-contact-header mobile-contact">Contacto</a>
             </nav>
 
@@ -560,6 +571,28 @@
         // Cerrar menú al hacer clic en un enlace
         const navItems = document.querySelectorAll('.nav-item');
         navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                hamburgerMenu.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Funcionalidad dropdown en móvil
+        const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                // Solo en móvil (menos de 968px)
+                if (window.innerWidth <= 968) {
+                    e.preventDefault();
+                    const dropdown = this.parentElement;
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+
+        // Cerrar menú al hacer clic en items del dropdown
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        dropdownItems.forEach(item => {
             item.addEventListener('click', function() {
                 hamburgerMenu.classList.remove('active');
                 navMenu.classList.remove('active');
