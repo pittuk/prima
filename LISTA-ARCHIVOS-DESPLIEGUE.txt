@@ -25,6 +25,20 @@ CONFIGURACIÓN (1 archivo):
 ☐ .htaccess
 
 ====================================
+CARPETA: phpmailer/
+====================================
+
+PHPMailer (librería para SMTP):
+☐ Exception.php
+☐ PHPMailer.php
+☐ SMTP.php
+☐ POP3.php
+☐ OAuth.php
+☐ [otros archivos de PHPMailer]
+
+☐ Subir TODA la carpeta phpmailer/ completa
+
+====================================
 CARPETA: images/
 ====================================
 
@@ -60,7 +74,10 @@ NO subir estos archivos (son de desarrollo/backup):
 ✗ styles-backup.css (backup)
 ✗ styles.css (versión antigua)
 ✗ DESPLIEGUE-HOSTINGER.md (solo para referencia local)
+✗ CONFIGURACION-SMTP.md (solo para referencia local)
 ✗ LISTA-ARCHIVOS-DESPLIEGUE.txt (este archivo)
+✗ PHPMailer.zip (archivo temporal)
+✗ PHPMailer-6.9.1/ (carpeta temporal, usar phpmailer/)
 ✗ .git/ (si existe)
 ✗ .gitignore
 ✗ README.md (si no quieres que sea público)
@@ -69,9 +86,15 @@ NO subir estos archivos (son de desarrollo/backup):
 CONFIGURACIONES POST-DESPLIEGUE
 ====================================
 
-1. CORREO ELECTRÓNICO:
+1. CORREO ELECTRÓNICO (SMTP): ⚠️ CRÍTICO
    ☐ Crear cuenta: info@proyectoprima.com en hPanel
-   ☐ Verificar que el correo funcione (enviar email de prueba)
+   ☐ Guardar la contraseña creada
+   ☐ Editar enviar-formulario.php con la contraseña (línea 9)
+   ☐ Verificar que carpeta phpmailer/ esté subida
+   ☐ Probar formulario y verificar recepción
+   ☐ Verificar que NO caiga en spam
+
+   📖 Ver CONFIGURACION-SMTP.md para instrucciones detalladas
 
 2. SSL/HTTPS:
    ☐ Activar certificado SSL gratuito en Hostinger

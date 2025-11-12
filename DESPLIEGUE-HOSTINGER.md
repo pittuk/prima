@@ -12,7 +12,7 @@
 - agenda.html (Agenda de eventos)
 
 ### Backend PHP (1 archivo)
-- enviar-formulario.php (Manejador de formularios)
+- enviar-formulario.php (Manejador de formularios con SMTP)
 
 ### Estilos CSS (1 archivo principal)
 - styles-clean.css (Hoja de estilos principal - v6)
@@ -20,6 +20,7 @@
 ### Carpetas necesarias
 - images/ (Imágenes y recursos visuales)
 - videos/ (Videos del sitio)
+- phpmailer/ (Librería PHPMailer para envío SMTP)
 
 ## Pasos para Desplegar en Hostinger
 
@@ -42,31 +43,46 @@
 5. Crear carpeta `images/` y subir todas las imágenes
 6. Crear carpeta `videos/` y subir todos los videos
 
-### 3. Configurar el Correo Electrónico
+### 3. Configurar el Correo Electrónico con SMTP ⚠️ IMPORTANTE
 
-**IMPORTANTE:** Editar `enviar-formulario.php` línea 3:
+El sitio está configurado para usar **PHPMailer con SMTP de Hostinger** para evitar que los correos caigan en spam.
+
+**Paso 1: Crear cuenta de correo en hPanel**
+1. Ir a hPanel → "Correos electrónicos" → "Cuentas de correo"
+2. Crear nueva cuenta:
+   - Usuario: `info`
+   - Dominio: `proyectoprima.com`
+   - Contraseña: **Crear contraseña segura y guardarla**
+   - Tamaño: Mínimo 1 GB
+
+**Paso 2: Configurar credenciales SMTP**
+
+Editar `enviar-formulario.php` líneas 6-12 con la contraseña creada:
 
 ```php
-$destinatario = "info@proyectoprima.com";
+$smtp_host = 'smtp.hostinger.com';
+$smtp_port = 465;
+$smtp_user = 'info@proyectoprima.com';
+$smtp_pass = 'TU_CONTRASEÑA_AQUI'; // ⚠️ CAMBIAR ESTO
+$smtp_from = 'info@proyectoprima.com';
+$smtp_from_name = 'Proyecto PRIMA';
+$smtp_to = 'info@proyectoprima.com';
 ```
 
-**Configurar en Hostinger:**
-1. Crear cuenta de correo info@proyectoprima.com en hPanel
-2. Ir a "Cuentas de correo" > "Crear nueva cuenta"
-3. Usuario: info
-4. Dominio: proyectoprima.com
+**Paso 3: Subir carpeta PHPMailer**
 
-### 4. Verificar PHP Mail en Hostinger
+Asegurarse de subir la carpeta `phpmailer/` a la raíz de `public_html/`:
 
-Hostinger usa configuración especial para mail(). Si no funciona:
+```
+public_html/
+├── enviar-formulario.php
+├── phpmailer/
+│   ├── Exception.php
+│   ├── PHPMailer.php
+│   └── SMTP.php
+```
 
-**Opción 1: Usar PHPMailer (Recomendado)**
-- Instalar PHPMailer vía Composer o manual
-- Actualizar enviar-formulario.php para usar PHPMailer
-
-**Opción 2: Configurar SMTP**
-- Configurar SMTP en el código PHP
-- Usar credenciales del correo creado
+Ver **CONFIGURACION-SMTP.md** para detalles completos sobre configuración anti-spam.
 
 ### 5. Permisos de Archivos
 Establecer permisos correctos:
@@ -132,6 +148,12 @@ public_html/
 ├── agenda.html
 ├── enviar-formulario.php
 ├── styles-clean.css
+├── .htaccess
+├── phpmailer/
+│   ├── Exception.php
+│   ├── PHPMailer.php
+│   ├── SMTP.php
+│   └── [otros archivos]
 ├── images/
 │   ├── logo.png
 │   ├── Proyecto-prima-favicon.png
