@@ -1,0 +1,167 @@
+LISTA DE ARCHIVOS PARA DESPLIEGUE EN HOSTINGER
+Proyecto PRIMA
+Fecha: 12 de Noviembre de 2025
+
+====================================
+ARCHIVOS EN LA RAÍZ (public_html/)
+====================================
+
+HTML (7 archivos):
+☐ index.html
+☐ nosotros.html
+☐ metodo-prima-home.html
+☐ cultura-ambiental.html
+☐ contacto.html
+☐ contacto-gracias.html
+☐ agenda.html
+
+PHP (1 archivo):
+☐ enviar-formulario.php
+
+CSS (1 archivo):
+☐ styles-clean.css
+
+CONFIGURACIÓN (1 archivo):
+☐ .htaccess
+
+====================================
+CARPETA: images/
+====================================
+
+IMPORTANTE: Subir TODOS los archivos de la carpeta images/
+Archivos principales confirmados:
+☐ logo.png
+☐ Proyecto-prima-favicon.png
+☐ equipo-prima.webp
+☐ producto-manos-1.png
+☐ persona-haciendo-reciclaje-selectivo-de-basura1.webp
+☐ Sensibilización y educación.webp
+☐ Recolección y clasificación colaborativa.webp
+☐ quienes-somos.jpg
+☐ mujer-joven-clasificacion-de-basura-concepto-de-reciclaje-cero-desperdicio.webp
+☐ personas-que-realizan-acciones-comunitarias.webp
+☐ voluntarios-sonrientes-preparando-comida-para-donacion.webp
+☐ metodo-prima2.png
+
+☐ Subir TODA la carpeta images/ completa
+
+====================================
+CARPETA: videos/
+====================================
+
+☐ 67a53af43553cdcdb0a76634.mp4
+☐ Subir TODOS los videos adicionales
+
+====================================
+ARCHIVOS QUE NO SE DEBEN SUBIR
+====================================
+
+NO subir estos archivos (son de desarrollo/backup):
+✗ styles-backup.css (backup)
+✗ styles.css (versión antigua)
+✗ DESPLIEGUE-HOSTINGER.md (solo para referencia local)
+✗ LISTA-ARCHIVOS-DESPLIEGUE.txt (este archivo)
+✗ .git/ (si existe)
+✗ .gitignore
+✗ README.md (si no quieres que sea público)
+
+====================================
+CONFIGURACIONES POST-DESPLIEGUE
+====================================
+
+1. CORREO ELECTRÓNICO:
+   ☐ Crear cuenta: info@proyectoprima.com en hPanel
+   ☐ Verificar que el correo funcione (enviar email de prueba)
+
+2. SSL/HTTPS:
+   ☐ Activar certificado SSL gratuito en Hostinger
+   ☐ Descomentar líneas de forzar HTTPS en .htaccess
+   ☐ Verificar que todas las páginas carguen en HTTPS
+
+3. PERMISOS DE ARCHIVOS:
+   ☐ Archivos .html: 644
+   ☐ enviar-formulario.php: 644
+   ☐ styles-clean.css: 644
+   ☐ .htaccess: 644
+   ☐ Carpeta images/: 755
+   ☐ Carpeta videos/: 755
+
+4. DOMINIO:
+   ☐ Configurar proyectoprima.com en Hostinger
+   ☐ Actualizar DNS si es necesario
+   ☐ Esperar propagación DNS (24-48 horas)
+
+====================================
+PRUEBAS POST-DESPLIEGUE
+====================================
+
+NAVEGACIÓN:
+☐ Probar index.html (página principal)
+☐ Probar nosotros.html
+☐ Probar metodo-prima-home.html
+☐ Probar cultura-ambiental.html
+☐ Probar agenda.html
+☐ Probar contacto.html
+☐ Verificar todos los enlaces del menú
+☐ Verificar menú hamburguesa en móvil
+
+FORMULARIOS:
+☐ Enviar formulario de contacto.html
+☐ Verificar recepción de email
+☐ Verificar redirección a contacto-gracias.html
+☐ Enviar formulario de metodo-prima-home.html
+☐ Verificar recepción de email con datos correctos
+☐ Verificar manejo de errores
+
+RECURSOS:
+☐ Todas las imágenes cargan correctamente
+☐ Logo en header visible
+☐ Favicon aparece en pestaña del navegador
+☐ Video en metodo-prima-home.html reproduce
+☐ Estilos CSS se aplican correctamente
+
+RESPONSIVE:
+☐ Probar en móvil (iPhone/Android)
+☐ Probar en tablet
+☐ Probar en desktop
+☐ Verificar menú responsive
+☐ Verificar formularios en móvil
+
+FUNCIONALIDADES:
+☐ Botón flotante de WhatsApp funciona
+☐ Enlaces a redes sociales funcionan
+☐ Enlaces internos (#anclas) funcionan
+☐ Enlaces a secciones específicas (nosotros.html#team-section)
+
+SEO Y PERFORMANCE:
+☐ Verificar que todas las páginas tengan meta tags
+☐ Probar velocidad de carga (Google PageSpeed Insights)
+☐ Verificar SSL activo (candado verde en navegador)
+☐ Enviar sitemap a Google Search Console
+
+====================================
+CONTACTOS DE SOPORTE
+====================================
+
+Hostinger:
+- Panel: hpanel.hostinger.com
+- Soporte: https://www.hostinger.com/contact
+- Documentación: https://support.hostinger.com
+
+Proyecto PRIMA:
+- WhatsApp: +56963240890
+- Email: info@proyectoprima.com
+- Sitio: https://proyectoprima.com
+
+====================================
+NOTAS IMPORTANTES
+====================================
+
+1. BACKUP: Hacer backup de todos los archivos antes de subir
+2. PRUEBA LOCAL: Verificar que todo funcione en local primero
+3. CORREO: Si mail() no funciona, considerar PHPMailer
+4. CACHE: Limpiar cache del navegador (Ctrl+F5) al probar
+5. DNS: Los cambios de DNS tardan 24-48 horas
+6. VERSIÓN CSS: Si cambias CSS, actualizar ?v=6 a ?v=7
+
+====================================
